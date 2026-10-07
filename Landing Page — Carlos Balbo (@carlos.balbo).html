@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carlos Balbo | ZX6R — Siga na estrada</title>
+<meta name="description" content="Rolês de moto, viagens, rock, churrasco e resenha. Siga @carlos.balbo no Instagram.">
+<meta property="og:title" content="Carlos Balbo | ZX6R">
+<meta property="og:description" content="A estrada é melhor quando você vem junto. Siga @carlos.balbo.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#111214">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111214;--card:#16181B;--band:#1A1C1F;--line:#2A2C30;--text:#F2EFE9;--muted:#C9C4BB;--accent:#FF4A1C;--pad:clamp(20px,5vw,48px)}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5;padding-bottom:env(safe-area-inset-bottom,0)}
+a{text-decoration:none;color:inherit}
+img,svg{max-width:100%;height:auto}
+.display{font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif;text-transform:uppercase}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding-inline:var(--pad)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 32px;border-radius:999px;background:var(--accent);color:#111214;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+.btn.dark{background:#111214;color:var(--text)}
+header{position:sticky;top:0;z-index:10;background:rgba(17,18,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{font-weight:800;font-size:clamp(1.1rem,4vw,1.5rem);letter-spacing:.04em;white-space:nowrap}
+.logo span{color:var(--accent)}
+header .btn{min-height:44px;padding:0 22px;font-size:1rem}
+.hero{padding-block:clamp(48px,10vw,110px) clamp(40px,8vw,80px);display:flex;flex-direction:column;gap:clamp(18px,3vw,28px)}
+.kicker{font-weight:600;font-size:clamp(.85rem,2.5vw,1.1rem);letter-spacing:.2em;color:var(--accent)}
+h1{margin:0;font-weight:800;font-size:clamp(2.8rem,10vw,7.5rem);line-height:.95}
+.lead{margin:0;max-width:38rem;font-size:clamp(1.05rem,2.6vw,1.3rem);color:var(--muted)}
+.cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.cta-row small{font-size:1rem;color:#A8A39A}
+.stats{background:var(--band);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:28px;padding-block:44px}
+.num{font-weight:800;font-size:clamp(2.6rem,8vw,3.5rem);color:var(--accent);line-height:1}
+.stat p{margin:6px 0 0;color:var(--muted)}
+section.block{padding-block:clamp(56px,9vw,96px)}
+h2{margin:0 0 clamp(24px,5vw,40px);font-weight:800;font-size:clamp(2.2rem,6vw,4rem);line-height:1}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px}
+.card{border:1px solid var(--line);border-radius:16px;padding:28px;background:var(--card)}
+.card h3{margin:0 0 10px;font-weight:700;font-size:1.75rem}
+.card p{margin:0;color:var(--muted);font-size:1.05rem}
+.qr{background:var(--band);border-block:1px solid var(--line)}
+.qr .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(24px,6vw,64px);padding-block:clamp(48px,8vw,80px)}
+.qr svg{width:min(70vw,240px);border-radius:16px}
+.qr div.txt{max-width:28rem}
+.qr h2{margin-bottom:12px;font-size:clamp(2rem,5vw,3rem)}
+.qr p{margin:0;color:var(--muted);font-size:1.1rem}
+.final{background:var(--accent);color:#111214}
+.final .wrap{padding-block:clamp(56px,9vw,90px);display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.final h2{margin:0;font-size:clamp(2.6rem,8vw,5.5rem);line-height:.95}
+.final p{margin:0;max-width:34rem;font-size:1.25rem}
+footer{padding:28px var(--pad) 96px;text-align:center;font-size:.9rem;color:#A8A39A}
+.sticky-cta{display:none}
+@media (max-width:640px){
+.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom,0));background:rgba(17,18,20,.95);border-top:1px solid var(--line)}
+.sticky-cta .btn{width:100%}
+header .btn{display:none}
+.hero .btn,.final .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo display">Carlos Balbo <span>| ZX6R</span></div><a class="btn" href="https://www.instagram.com/carlos.balbo" rel="noopener">Seguir</a></div></header>
+
+<main>
+<section class="wrap hero">
+<div class="kicker display">Motociclismo · Estrada · Rock</div>
+<h1 class="display">A estrada é melhor<br>quando você vem junto.</h1>
+<p class="lead">Rolês de moto, viagens, churrasco e resenha. Tudo registrado no dia a dia, com trilha sonora de rock e a turma que faz a diferença.</p>
+<div class="cta-row"><a class="btn" href="https://www.instagram.com/carlos.balbo" rel="noopener">Seguir @carlos.balbo</a><small>Grátis. Um toque e você já está na garupa.</small></div>
+</section>
+
+<div class="stats"><div class="wrap">
+<div class="stat"><div class="num display">+123 mil</div><p>visualizações nos últimos 30 dias</p></div>
+<div class="stat"><div class="num display">2.127</div><p>seguidores na estrada</p></div>
+<div class="stat"><div class="num display">+15 mil</div><p>views em um único reel</p></div>
+</div></div>
+
+<section class="block wrap">
+<h2 class="display">O que você vai ver por aqui</h2>
+<div class="cards">
+<div class="card"><h3 class="display">Moto e estrada</h3><p>Passeios, encontros de motociclistas e viagens com a ZX6R, direto do asfalto.</p></div>
+<div class="card"><h3 class="display">Rock, churrasco e resenha</h3><p>O pós-rolê também faz parte: boa música, boa comida e opinião sincera.</p></div>
+<div class="card"><h3 class="display">O dia a dia</h3><p>Bastidores sem filtro e fotos da galera. Aqui a comunidade aparece.</p></div>
+</div>
+</section>
+
+<div class="qr"><div class="wrap">
+<svg role="img" aria-label="QR Code para o Instagram @carlos.balbo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" shape-rendering="crispEdges"><rect width="37" height="37" fill="#fff"/><path d="M4,4h1v1h-1zM5,4h1v1h-1zM6,4h1v1h-1zM7,4h1v1h-1zM8,4h1v1h-1zM9,4h1v1h-1zM10,4h1v1h-1zM12,4h1v1h-1zM13,4h1v1h-1zM15,4h1v1h-1zM17,4h1v1h-1zM18,4h1v1h-1zM19,4h1v1h-1zM20,4h1v1h-1zM22,4h1v1h-1zM26,4h1v1h-1zM27,4h1v1h-1zM28,4h1v1h-1zM29,4h1v1h-1zM30,4h1v1h-1zM31,4h1v1h-1zM32,4h1v1h-1zM4,5h1v1h-1zM10,5h1v1h-1zM15,5h1v1h-1zM16,5h1v1h-1zM18,5h1v1h-1zM21,5h1v1h-1zM22,5h1v1h-1zM23,5h1v1h-1zM24,5h1v1h-1zM26,5h1v1h-1zM32,5h1v1h-1zM4,6h1v1h-1zM6,6h1v1h-1zM7,6h1v1h-1zM8,6h1v1h-1zM10,6h1v1h-1zM13,6h1v1h-1zM19,6h1v1h-1zM21,6h1v1h-1zM22,6h1v1h-1zM23,6h1v1h-1zM24,6h1v1h-1zM26,6h1v1h-1zM28,6h1v1h-1zM29,6h1v1h-1zM30,6h1v1h-1zM32,6h1v1h-1zM4,7h1v1h-1zM6,7h1v1h-1zM7,7h1v1h-1zM8,7h1v1h-1zM10,7h1v1h-1zM12,7h1v1h-1zM14,7h1v1h-1zM15,7h1v1h-1zM16,7h1v1h-1zM17,7h1v1h-1zM18,7h1v1h-1zM20,7h1v1h-1zM22,7h1v1h-1zM23,7h1v1h-1zM26,7h1v1h-1zM28,7h1v1h-1zM29,7h1v1h-1zM30,7h1v1h-1zM32,7h1v1h-1zM4,8h1v1h-1zM6,8h1v1h-1zM7,8h1v1h-1zM8,8h1v1h-1zM10,8h1v1h-1zM12,8h1v1h-1zM13,8h1v1h-1zM16,8h1v1h-1zM18,8h1v1h-1zM19,8h1v1h-1zM20,8h1v1h-1zM21,8h1v1h-1zM22,8h1v1h-1zM24,8h1v1h-1zM26,8h1v1h-1zM28,8h1v1h-1zM29,8h1v1h-1zM30,8h1v1h-1zM32,8h1v1h-1zM4,9h1v1h-1zM10,9h1v1h-1zM12,9h1v1h-1zM13,9h1v1h-1zM16,9h1v1h-1zM20,9h1v1h-1zM21,9h1v1h-1zM23,9h1v1h-1zM26,9h1v1h-1zM32,9h1v1h-1zM4,10h1v1h-1zM5,10h1v1h-1zM6,10h1v1h-1zM7,10h1v1h-1zM8,10h1v1h-1zM9,10h1v1h-1zM10,10h1v1h-1zM12,10h1v1h-1zM14,10h1v1h-1zM16,10h1v1h-1zM18,10h1v1h-1zM20,10h1v1h-1zM22,10h1v1h-1zM24,10h1v1h-1zM26,10h1v1h-1zM27,10h1v1h-1zM28,10h1v1h-1zM29,10h1v1h-1zM30,10h1v1h-1zM31,10h1v1h-1zM32,10h1v1h-1zM12,11h1v1h-1zM13,11h1v1h-1zM18,11h1v1h-1zM19,11h1v1h-1zM20,11h1v1h-1zM21,11h1v1h-1zM22,11h1v1h-1zM24,11h1v1h-1zM4,12h1v1h-1zM8,12h1v1h-1zM10,12h1v1h-1zM11,12h1v1h-1zM12,12h1v1h-1zM13,12h1v1h-1zM15,12h1v1h-1zM17,12h1v1h-1zM18,12h1v1h-1zM21,12h1v1h-1zM24,12h1v1h-1zM25,12h1v1h-1zM26,12h1v1h-1zM27,12h1v1h-1zM28,12h1v1h-1zM29,12h1v1h-1zM32,12h1v1h-1zM6,13h1v1h-1zM8,13h1v1h-1zM11,13h1v1h-1zM16,13h1v1h-1zM18,13h1v1h-1zM19,13h1v1h-1zM20,13h1v1h-1zM21,13h1v1h-1zM22,13h1v1h-1zM26,13h1v1h-1zM27,13h1v1h-1zM28,13h1v1h-1zM29,13h1v1h-1zM30,13h1v1h-1zM31,13h1v1h-1zM32,13h1v1h-1zM4,14h1v1h-1zM5,14h1v1h-1zM6,14h1v1h-1zM7,14h1v1h-1zM8,14h1v1h-1zM9,14h1v1h-1zM10,14h1v1h-1zM11,14h1v1h-1zM15,14h1v1h-1zM17,14h1v1h-1zM18,14h1v1h-1zM19,14h1v1h-1zM20,14h1v1h-1zM21,14h1v1h-1zM22,14h1v1h-1zM24,14h1v1h-1zM25,14h1v1h-1zM27,14h1v1h-1zM28,14h1v1h-1zM32,14h1v1h-1zM5,15h1v1h-1zM12,15h1v1h-1zM13,15h1v1h-1zM16,15h1v1h-1zM17,15h1v1h-1zM20,15h1v1h-1zM21,15h1v1h-1zM22,15h1v1h-1zM26,15h1v1h-1zM28,15h1v1h-1zM29,15h1v1h-1zM31,15h1v1h-1zM32,15h1v1h-1zM4,16h1v1h-1zM8,16h1v1h-1zM9,16h1v1h-1zM10,16h1v1h-1zM12,16h1v1h-1zM16,16h1v1h-1zM17,16h1v1h-1zM21,16h1v1h-1zM22,16h1v1h-1zM23,16h1v1h-1zM24,16h1v1h-1zM25,16h1v1h-1zM31,16h1v1h-1zM4,17h1v1h-1zM6,17h1v1h-1zM7,17h1v1h-1zM9,17h1v1h-1zM11,17h1v1h-1zM13,17h1v1h-1zM14,17h1v1h-1zM17,17h1v1h-1zM18,17h1v1h-1zM19,17h1v1h-1zM20,17h1v1h-1zM21,17h1v1h-1zM22,17h1v1h-1zM26,17h1v1h-1zM28,17h1v1h-1zM29,17h1v1h-1zM30,17h1v1h-1zM31,17h1v1h-1zM32,17h1v1h-1zM4,18h1v1h-1zM10,18h1v1h-1zM11,18h1v1h-1zM12,18h1v1h-1zM13,18h1v1h-1zM19,18h1v1h-1zM20,18h1v1h-1zM22,18h1v1h-1zM28,18h1v1h-1zM29,18h1v1h-1zM30,18h1v1h-1zM32,18h1v1h-1zM4,19h1v1h-1zM8,19h1v1h-1zM9,19h1v1h-1zM12,19h1v1h-1zM15,19h1v1h-1zM18,19h1v1h-1zM21,19h1v1h-1zM22,19h1v1h-1zM23,19h1v1h-1zM25,19h1v1h-1zM31,19h1v1h-1zM32,19h1v1h-1zM4,20h1v1h-1zM5,20h1v1h-1zM10,20h1v1h-1zM14,20h1v1h-1zM15,20h1v1h-1zM17,20h1v1h-1zM18,20h1v1h-1zM19,20h1v1h-1zM21,20h1v1h-1zM23,20h1v1h-1zM25,20h1v1h-1zM27,20h1v1h-1zM31,20h1v1h-1zM4,21h1v1h-1zM7,21h1v1h-1zM9,21h1v1h-1zM14,21h1v1h-1zM15,21h1v1h-1zM16,21h1v1h-1zM19,21h1v1h-1zM22,21h1v1h-1zM25,21h1v1h-1zM26,21h1v1h-1zM27,21h1v1h-1zM28,21h1v1h-1zM29,21h1v1h-1zM31,21h1v1h-1zM32,21h1v1h-1zM6,22h1v1h-1zM7,22h1v1h-1zM9,22h1v1h-1zM10,22h1v1h-1zM11,22h1v1h-1zM12,22h1v1h-1zM13,22h1v1h-1zM14,22h1v1h-1zM17,22h1v1h-1zM18,22h1v1h-1zM19,22h1v1h-1zM24,22h1v1h-1zM25,22h1v1h-1zM26,22h1v1h-1zM28,22h1v1h-1zM30,22h1v1h-1zM32,22h1v1h-1zM11,23h1v1h-1zM12,23h1v1h-1zM14,23h1v1h-1zM16,23h1v1h-1zM17,23h1v1h-1zM20,23h1v1h-1zM21,23h1v1h-1zM22,23h1v1h-1zM23,23h1v1h-1zM24,23h1v1h-1zM31,23h1v1h-1zM32,23h1v1h-1zM4,24h1v1h-1zM5,24h1v1h-1zM6,24h1v1h-1zM9,24h1v1h-1zM10,24h1v1h-1zM13,24h1v1h-1zM14,24h1v1h-1zM15,24h1v1h-1zM16,24h1v1h-1zM17,24h1v1h-1zM20,24h1v1h-1zM21,24h1v1h-1zM23,24h1v1h-1zM24,24h1v1h-1zM25,24h1v1h-1zM26,24h1v1h-1zM27,24h1v1h-1zM28,24h1v1h-1zM29,24h1v1h-1zM32,24h1v1h-1zM12,25h1v1h-1zM13,25h1v1h-1zM14,25h1v1h-1zM15,25h1v1h-1zM16,25h1v1h-1zM17,25h1v1h-1zM18,25h1v1h-1zM19,25h1v1h-1zM20,25h1v1h-1zM22,25h1v1h-1zM23,25h1v1h-1zM24,25h1v1h-1zM28,25h1v1h-1zM32,25h1v1h-1zM4,26h1v1h-1zM5,26h1v1h-1zM6,26h1v1h-1zM7,26h1v1h-1zM8,26h1v1h-1zM9,26h1v1h-1zM10,26h1v1h-1zM12,26h1v1h-1zM15,26h1v1h-1zM19,26h1v1h-1zM21,26h1v1h-1zM23,26h1v1h-1zM24,26h1v1h-1zM26,26h1v1h-1zM28,26h1v1h-1zM29,26h1v1h-1zM30,26h1v1h-1zM32,26h1v1h-1zM4,27h1v1h-1zM10,27h1v1h-1zM13,27h1v1h-1zM14,27h1v1h-1zM15,27h1v1h-1zM18,27h1v1h-1zM21,27h1v1h-1zM22,27h1v1h-1zM23,27h1v1h-1zM24,27h1v1h-1zM28,27h1v1h-1zM31,27h1v1h-1zM4,28h1v1h-1zM6,28h1v1h-1zM7,28h1v1h-1zM8,28h1v1h-1zM10,28h1v1h-1zM12,28h1v1h-1zM13,28h1v1h-1zM14,28h1v1h-1zM15,28h1v1h-1zM17,28h1v1h-1zM18,28h1v1h-1zM19,28h1v1h-1zM21,28h1v1h-1zM23,28h1v1h-1zM24,28h1v1h-1zM25,28h1v1h-1zM26,28h1v1h-1zM27,28h1v1h-1zM28,28h1v1h-1zM29,28h1v1h-1zM31,28h1v1h-1zM4,29h1v1h-1zM6,29h1v1h-1zM7,29h1v1h-1zM8,29h1v1h-1zM10,29h1v1h-1zM13,29h1v1h-1zM19,29h1v1h-1zM20,29h1v1h-1zM24,29h1v1h-1zM25,29h1v1h-1zM27,29h1v1h-1zM32,29h1v1h-1zM4,30h1v1h-1zM6,30h1v1h-1zM7,30h1v1h-1zM8,30h1v1h-1zM10,30h1v1h-1zM19,30h1v1h-1zM20,30h1v1h-1zM29,30h1v1h-1zM30,30h1v1h-1zM31,30h1v1h-1zM32,30h1v1h-1zM4,31h1v1h-1zM10,31h1v1h-1zM13,31h1v1h-1zM14,31h1v1h-1zM15,31h1v1h-1zM16,31h1v1h-1zM19,31h1v1h-1zM21,31h1v1h-1zM24,31h1v1h-1zM26,31h1v1h-1zM28,31h1v1h-1zM29,31h1v1h-1zM31,31h1v1h-1zM32,31h1v1h-1zM4,32h1v1h-1zM5,32h1v1h-1zM6,32h1v1h-1zM7,32h1v1h-1zM8,32h1v1h-1zM9,32h1v1h-1zM10,32h1v1h-1zM12,32h1v1h-1zM19,32h1v1h-1zM21,32h1v1h-1zM24,32h1v1h-1zM27,32h1v1h-1zM28,32h1v1h-1zM31,32h1v1h-1z" fill="#111214"/></svg>
+<div class="txt"><h2 class="display">Aponte a câmera</h2><p>Está no encontro? Escaneie o QR Code e caia direto no perfil @carlos.balbo.</p></div>
+</div></div>
+
+<div class="final"><div class="wrap">
+<h2 class="display">Bora rodar juntos?</h2>
+<p>Siga o perfil, ative as notificações e não perca o próximo rolê.</p>
+<a class="btn dark" href="https://www.instagram.com/carlos.balbo" rel="noopener">Seguir no Instagram</a>
+</div></div>
+</main>
+
+<footer>© Carlos Balbo · @carlos.balbo</footer>
+<div class="sticky-cta"><a class="btn" href="https://www.instagram.com/carlos.balbo" rel="noopener">Seguir no Instagram</a></div>
+</body>
+</html>
